@@ -1,0 +1,34 @@
+public class ProtectedPerson { 
+    protected String name;
+    protected int age;
+
+    public ProtectedPerson(String n, int a) {
+        name = n;
+        age = a;
+    }
+
+    public void setName(String n) {
+        name =n;
+    }
+
+    public void setAge(int a) {
+        age =a;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String toString() {
+        String returnString = "";
+        returnString += "PERSON\n";
+        returnString += "  name: " + name + "\n";
+        returnString += "  age: " + age + "\n";
+        return returnString;
+    }
+}
+

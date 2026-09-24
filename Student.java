@@ -5,7 +5,7 @@
  * adds a gpa field and a study method
  */ 
 
- public class Student extends Person {
+ public class Student extends Person implements Studyable {
     private double gpa;
 
     public Student(String n, int a, double g) {
@@ -21,17 +21,26 @@
         return gpa;
     }
 
+    
+    @Override
     public void study() {
         gpa += 0.1;
     }
 
-    public String toString() {
-        String returnString = "";
-        returnString += "STUDENT\n";
-        returnString += "  name: " + name + "\n";
-        returnString += "  age: " + age + "\n";
-        returnString += "  gpa: " + gpa + "\n";
-        return returnString;
+
+    public void study(int hours) {
+        gpa += hours * 0.05;
+    }
+
+
+    @Override
+public String toString() {
+    String returnString = "";
+    returnString += "STUDENT\n";
+    returnString += "  name: " + getName() + "\n";
+    returnString += "  age: " + getAge() + "\n";
+    returnString += "  gpa: " + gpa + "\n";
+    return returnString;
     }
 
 }

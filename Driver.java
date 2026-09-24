@@ -6,5 +6,14 @@ public class Driver {
 
         Student s1 = new Student("Gus", 23, 2.3);
         System.out.println(s1);
+
+        s1.study();
+        System.out.println("After studying: ");
+        System.out.println(s1);
+
+        s1.study(3);
+        System.out.print("After studying for 3 hours: ");
+        System.out.println(s1);
+    
     }
 }

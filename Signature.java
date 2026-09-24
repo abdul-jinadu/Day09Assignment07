@@ -6,7 +6,7 @@ public class Signature {
         }
     }
     
-    public static int myMethod(int y, String name) {
+    public static int myMethod(String name, int y) {
         System.out.println(name + y);
         return y;
     }

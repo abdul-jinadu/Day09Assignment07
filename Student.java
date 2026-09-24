@@ -21,18 +21,20 @@
         return gpa;
     }
 
-    
+    // Implementation of Studytable interface
     @Override
     public void study() {
         gpa += 0.1;
     }
 
 
+    // Method Overloading
     public void study(int hours) {
         gpa += hours * 0.05;
     }
 
 
+    // Method Overriding
     @Override
 public String toString() {
     String returnString = "";

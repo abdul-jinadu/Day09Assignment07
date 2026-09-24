@@ -1,6 +1,3 @@
-// The JetBrains article taught me that polymorphism enables the same function to act differently depending on the object that uses it. 
- //Because a subclass can offer its own version of a method inherited from a superclass, the article made it clearer to me how crucial method overriding is to this. 
-
 
 // The change is creating the new interface Studyable.
 // The interface contains a study() method which means that any class implements the interface must have a study() method.

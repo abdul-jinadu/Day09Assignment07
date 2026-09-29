@@ -1,4 +1,6 @@
-
+// Something from the article I took away was,
+// Polymorphism allows the same method to act different relying on which object is using it.
+// It just reinforced the importance of overriding since a subclass can provide its own version of a method when inherited from a superclass.
 // The change is creating the new interface Studyable.
 // The interface contains a study() method which means that any class implements the interface must have a study() method.
 // In the Student class, you can changeed the declaration to Student Extends Person implements Studyable.
